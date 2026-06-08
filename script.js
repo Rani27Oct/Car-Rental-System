@@ -1,1 +1,5 @@
-console.log("Car Rental System");
+function bookCar(carName){
+
+    alert("✅ Booking Confirmed for " + carName);
+
+}
