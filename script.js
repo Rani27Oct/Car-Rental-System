@@ -1,31 +1,28 @@
 function bookCar(carName){
+    document.getElementById("selectedCar").value = carName;
 
-    document.getElementById("selectedCar").value =
-    carName;
-
-    window.scrollTo({
-        top:document.body.scrollHeight,
+    document.querySelector(".booking-section")
+    .scrollIntoView({
         behavior:"smooth"
     });
 }
 
 function confirmBooking(){
 
-    let customer =
+    let name =
     document.getElementById("customerName").value;
 
     let car =
     document.getElementById("selectedCar").value;
 
-    if(customer === "" || car === ""){
-
-        alert("Please fill booking details!");
+    if(name === "" || car === ""){
+        alert("Please enter details!");
         return;
     }
 
     alert(
         "✅ Booking Confirmed!\n\nCustomer: "
-        + customer +
+        + name +
         "\nCar: " +
         car
     );
@@ -46,11 +43,10 @@ function searchCar(){
 
     cards.forEach(card => {
 
-        if(
-            card.innerText
-            .toLowerCase()
-            .includes(search)
-        ){
+        let text =
+        card.innerText.toLowerCase();
+
+        if(text.includes(search)){
             card.style.display="block";
         }
         else{
