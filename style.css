@@ -1,6 +1,6 @@
 body{
-    font-family: Arial, sans-serif;
-    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+    background:#eef2f7;
     margin:0;
     padding:20px;
 }
@@ -12,78 +12,90 @@ body{
 
 h1{
     text-align:center;
-    margin-bottom:25px;
+    color:#1e3a8a;
+    margin-bottom:30px;
 }
 
 #search{
     width:100%;
-    padding:12px;
-    margin-bottom:20px;
-    border:1px solid #ccc;
-    border-radius:8px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 0 8px #ccc;
+    margin-bottom:25px;
     box-sizing:border-box;
 }
 
 .car-list{
     display:flex;
     flex-wrap:wrap;
-    gap:20px;
+    gap:25px;
     justify-content:center;
 }
 
 .car-card{
     width:250px;
     background:white;
-    border-radius:12px;
-    box-shadow:0 0 10px gray;
+    border-radius:15px;
+    padding:20px;
     text-align:center;
-    padding:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
-.car-icon{
+.car-card:hover{
+    transform:translateY(-8px);
+}
+
+.car-image{
     font-size:80px;
-    padding:15px;
 }
 
-.car-card p{
-    font-size:20px;
+.rating{
+    color:orange;
+}
+
+.price{
+    font-size:24px;
     font-weight:bold;
+    color:#1e3a8a;
 }
 
 button{
-    background:green;
+    background:#2563eb;
     color:white;
     border:none;
-    padding:10px 20px;
-    border-radius:6px;
+    padding:12px 20px;
+    border-radius:8px;
     cursor:pointer;
 }
 
 button:hover{
-    background:darkgreen;
+    background:#1d4ed8;
 }
 
 .booking-section{
-    margin-top:30px;
+    margin-top:40px;
     background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 0 10px gray;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
 .booking-section input{
     width:100%;
     padding:12px;
     margin-bottom:12px;
-    border:1px solid #ccc;
-    border-radius:6px;
+    border:1px solid #ddd;
+    border-radius:8px;
     box-sizing:border-box;
 }
 
 .contact{
     margin-top:30px;
-    text-align:center;
     background:white;
+    text-align:center;
     padding:20px;
-    border-radius:10px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
